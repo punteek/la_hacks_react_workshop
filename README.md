@@ -11,4 +11,9 @@ First we will set up the environment:
 1) Install a recent version of Node.js [here](https://nodejs.org/en/).
    Select the version "Recommended For Most Users".
 
-2) 
+2) Create a new folder on your computer where the project will reside.
+   In this folder:
+   	- `npm install -g create-react-app`
+   	- `create-react-app my-app`
+
+3) 
