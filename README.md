@@ -20,4 +20,4 @@ Requirements before beginning the example:
 4) Clone [this](https://github.com/punteek/la_hacks_react_workshop)
    repository into a new folder.
 
-5) Navigate into the `my-ap` directory, then `npm start`
+5) Navigate into the `my-ap` directory, `npm install` then `npm start`
