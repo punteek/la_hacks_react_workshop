@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// functional component syntax, a way to
+// write components that only have a render
 function Square(props) {
   return (
-    <button className="square" onClick={props.onClick}>
-      {props.value}
+    <button className="square" /*TODO: props*/>
+      TODO:props
     </button>
   );
 }
@@ -44,18 +46,16 @@ class Board extends React.Component {
 }
 
 class Game extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      history: [
-        {
-          squares: Array(9).fill(null)
-        }
-      ],
-      stepNumber: 0,
-      xIsNext: true
-    };
-  }
+  // TODO: STATEFUL COMPONENT
+  this.state = {
+    history: [
+      {
+        squares: Array(9).fill(null)
+      }
+    ],
+    stepNumber: 0,
+    xIsNext: true
+  };
 
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
@@ -125,7 +125,8 @@ class Game extends React.Component {
 
 // ========================================
 
-ReactDOM.render(<Game />, document.getElementById("root"));
+// WE ARE RENDERING TO THE TAG WITH ID 'ROOT' IN OUR HTML FILE
+// TODO: RENDER
 
 function calculateWinner(squares) {
   const lines = [
