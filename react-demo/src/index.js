@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+// functional component syntax, a way to
+// write components that only have a render
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
@@ -56,6 +58,7 @@ class Game extends React.Component {
       xIsNext: true
     };
   }
+
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
@@ -123,10 +126,10 @@ class Game extends React.Component {
 }
 
 // ========================================
+
 //TODO: DISPLAY GAME
-
-ReactDOM.render(<Game />, document.getElementById("root"));
-
+// WE ARE RENDERING TO THE TAG WITH ID 'ROOT' IN OUR HTML FILE
+ReactDOM.render(<Game />, document.getElementById('root'));
 
 function calculateWinner(squares) {
   const lines = [
