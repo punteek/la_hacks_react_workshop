@@ -44,7 +44,7 @@ class Board extends React.Component {
 }
 
 class Game extends React.Component {
-  constructor(props) {
+  constructor(props){
     super(props);
     this.state = {
       history: [
@@ -56,7 +56,6 @@ class Game extends React.Component {
       xIsNext: true
     };
   }
-
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
@@ -124,8 +123,10 @@ class Game extends React.Component {
 }
 
 // ========================================
+//TODO: DISPLAY GAME
 
 ReactDOM.render(<Game />, document.getElementById("root"));
+
 
 function calculateWinner(squares) {
   const lines = [
